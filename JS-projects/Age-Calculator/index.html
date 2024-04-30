@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form class="card__form">
+          <div class="card__inputContainer">
+            <label class="card__label" for="day">Day</label>
+            <input
+              class="card__input"
+              name="day"
+              id="day"
+              type="number"
+              required
+              placeholder="DD"
+              min="0"
+              max="31"
+            />
+            <span class="card__errorMessage">must be a valid day</span>
+          </div>
+          <div class="card__inputContainer">
+            <label class="card__label" for="month">Month</label>
+            <input
+              class="card__input"
+              name="month"
+              id="month"
+              type="number"
+              required
+              placeholder="MM"
+              min="0"
+              max="12"
+            />
+            <span class="card__errorMessage">must be a valid month</span>
+          </div>
+          <div class="card__inputContainer">
+            <label class="card__label" for="year">Year</label>
+            <input
+              class="card__input"
+              name="year"
+              id="year"
+              type="number"
+              required
+              placeholder="YYYY"
+              min="0"
+            />
+            <span class="card__errorMessage">must be a valid year</span>
+          </div>
+        </form>
+        <div class="card__separator">
+          <button class="card__button" />Calculate</button>
+        </div>
+        <div class="card__resault">
+          <span class="card__resultLable">You are</span>
+          <span class="card__resultValue">--</span>
+          <span class="card__resultLable">Years old</span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
